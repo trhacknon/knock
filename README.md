@@ -12,7 +12,7 @@ Knockpy is a python3 tool designed to quickly enumerate subdomains on a target d
 ###### You need python3, pip3, git.
 
 ```
-git clone https://github.com/guelfoweb/knock.git
+git clone https://github.com/trhacknon/knock.git
 cd knock
 pip3 install -r requirements.txt
 python3 knockpy.py <DOMAIN>
@@ -80,7 +80,7 @@ optional arguments:
 - Attack type: **dns** + **http(s)** requests
 - Knockpy uses internal file ```wordlist.txt```. If you want to use an external dictionary you can use the ```-w``` option and specify the path to your dictionary text file.
 - Knockpy also tries to get subdomains from ```google```, ```duckduckgo```, and ```virustotal```. The results will be added to the general dictionary.
-- It is highly recommended to use a [virustotal](https://github.com/guelfoweb/knock#virustotal-apikey) ```API_KEY``` which you can get for free. The best results always come from ```virustotal```.
+- It is highly recommended to use a [virustotal](https://github.com/trhacknon/knock#virustotal-apikey) ```API_KEY``` which you can get for free. The best results always come from ```virustotal```.
 - But, if you only want to work with local word lists, without search engines queries, you can add ```--no-remote``` to bypass remote recon.
 - If you want to ignore http(s) responses with specific code, you can use the ```--no-http-code``` option followed by the code list ```404 500 530```
 
@@ -134,7 +134,7 @@ optional arguments:
 ### Report
 - At each scan the report will be automatically saved in ```json``` format inside the file with the name ```domain.com_yyyy_mm_dd_hh_mm_ss.json```.
 - If you don't like autosave you can disable it from the ```config.json``` file by changing the value to ```"save": false```.
-- To read the report in a human format you can do as described in [Show report](https://github.com/guelfoweb/knock#show-report).
+- To read the report in a human format you can do as described in [Show report](https://github.com/trhacknon/knock#show-report).
 
 Report example ```domain.com_yyyy_mm_dd_hh_mm_ss.json```:
 
@@ -176,4 +176,4 @@ Report example ```domain.com_yyyy_mm_dd_hh_mm_ss.json```:
 
 # License
 
-Knockpy is currently under development by [@guelfoweb](https://twitter.com/guelfoweb) and it's released under the GPL 3 license.
+Knockpy is currently under development by [@guelfoweb](https://twitter.com/) and it's released under the GPL 3 license.
